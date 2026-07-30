@@ -55,6 +55,20 @@ Camera_2,SERIAL_002
 Both values are required and must be unique. The serial number must match the
 value reported by `librealsense` for that device.
 
+The repository tracks `cameras.csv` with dummy serial numbers. After cloning,
+tell Git to keep your camera-specific edits local:
+
+```bash
+git update-index --skip-worktree cameras.csv
+```
+
+This setting is local to each clone, so every user must run the command before
+editing `cameras.csv`. To make the file visible to Git again, run:
+
+```bash
+git update-index --no-skip-worktree cameras.csv
+```
+
 ## Usage
 
 Capture one RGB/depth pair from every configured camera:
