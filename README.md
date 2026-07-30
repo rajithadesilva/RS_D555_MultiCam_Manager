@@ -48,8 +48,8 @@ Edit `cameras.csv` and add one row per camera:
 
 ```csv
 camera_name,serial_number
-Camera_1,419222301842
-Camera_2,409122302580
+Camera_1,SERIAL_001
+Camera_2,SERIAL_002
 ```
 
 Both values are required and must be unique. The serial number must match the
@@ -126,7 +126,7 @@ Images are grouped by a filesystem-safe camera name and serial number:
 
 ```text
 captures/
-└── Camera_1_419222301842/
+└── Camera_1_SERIAL_001/
     ├── rgb/
     │   └── 20260730_142530_123.png
     └── depth/
